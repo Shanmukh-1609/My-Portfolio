@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fffff0;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+.small-text {
+  font-size: 15px;
+  color: gray;
+}
+
+.medium-text {
+  font-size: 25px;
+  font-weight: bold;
+  color: gray;
+}
+
+.large-text {
+  font-size: 35px;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.skills-container {
+  max-width: 800px;
+  padding: 100px;
+  margin: auto;
+  text-align: center;
+}
+
+.skillSetContainer {
+  display: flex;
+  gap: 120px;
+  justify-content: space-between;
+}
+
+.projectsContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px;
+  text-align: center;
+}
+
+.contactContainer {
+  margin: 50px;
+  padding: 100px;
+  text-align: center;
+  align-items: center;
+}
+
+.contactInfo {
+  margin: 20px 0;
+}
+
+.contactInfo a {
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 15px;
+  color: #0073e6;
+  padding: 10px 20px;
+  border: 1px solid #0073e6;
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.contactInfo a:hover {
+  background-color: #0073e6;
+  color: #fff;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+  gap: 120px;
+}
+
+.project {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+  width: 300px;
+}
+
+.project img {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+}
+
+.skillset {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 45%;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.image-container {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.info-container {
+  flex: 2;
+  text-align: left;
+}
+
+.about-container h1 {
+  font-size: small;
+  margin-bottom: 10px;
+  color: gray;
+}
+
+.about-container h2 {
+  font-size: 2em;
+  margin-bottom: #333333;
+}
+
+.about-container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.about-container p {
+  margin: 5px 0;
+  color: gray;
+}
+
+.skillset h2 {
+  margin-top: 0;
+}
+
+.skillset ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skillset li {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.skills,
+.education {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333333;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: gray;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding: 70px;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.social-media li .linkedin-button {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #213ece;
+  color: #fff;
+  border: 2px solid #071c87;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.social-media li .linkedin-button:hover {
+  background-color: #071c87;
+  color: #fff;
+}
+
+.social-media li .github-button {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #333333;
+  color: #fff;
+  border: 2px solid #1a1b1f;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.social-media li .github-button:hover {
+  background-color: #1a1b1f;
+  color: #ffffff;
+}
+
+.social-media li .linkedin-button a,
+.social-media li .github-button a {
+  color: #ffffff;
+}
+
+.button {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid #1a1b1f;
+  background-color: #ddd;
+  text-decoration: none;
+  color: #333333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background-color: #1a1b1f;
+  color: #ffffff;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+.social-media li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.social-media li a {
+  text-decoration: none;
+}
+
+footer {
+  padding: 50px;
+  font-size: 14px;
+  color: #777;
+  text-align: center;
+}
