@@ -2,172 +2,343 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+    <link rel="website icon" type="png" herf="./assets/log.png">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
   </head>
-  <body>
-    <header>
-      <h1>Shanmukha Sai Bhogavilli</h1>
-      <nav>
-        <ul>
+  <body>-
+    <nav id="desktop-nav">
+      <div class="logo">Bhogavilli Shanmukha Sai</div>
+      <div>
+        <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skill Set</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="intro">
-        <img
-          src="./hreffolder/Profile-Pic.png"
-          alt="Profile Pic"
-          class="profile-pic"
-        />
-        <div>
-          <h2 class="small-text">Hello, I'm</h2>
-          <h2 class="large-text">Shanmukha Sai Bhogavilli</h2>
-          <p class="medium-text" style="margin-bottom: 15px">
-            Student at Raghu Institute of Technology
-          </p>
-          <a class="button" href="./hreffolder/Shanmukha_Sai.docx"
-            >Download CV</a
-          >
-          <a class="button" href="#contact">Contact Info</a>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Bhogavilli Shanmukha Sai</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-      </section>
-    </main>
-    <div>
-      <ul class="social-media">
-        <li>
-          <a
-            class="linkedin-button"
-            href="https://linkedin.com/in/shanmukh-sai-3140b9230"
-            target="_blank"
-            >LinkedIn</a
-          >
-        </li>
-        <li>
-          <a
-            class="github-button"
-            href="https://github.com/Shanmukh-1609"
-            target="_blank"
-            >GitHub</a
-          >
-        </li>
-      </ul>
-    </div>
-    <br /><br /><br /><br />
-    <div class="about-container" id="about">
-      <h1 style="margin-bottom: 0">Get to Know More</h1>
-      <h2>About Me</h2>
-      <div class="about-section">
-        <div class="image-container">
-          <img src="./hreffolder/About-Pic.jpg" alt="About Me Image" />
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
-        <div class="info-container">
-          <div class="education">
-            <h3>Education</h3>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile.JPG" alt="Bhogavilli Shanmukha Sai profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Bhogavilli Shanmukha Sai</h1>
+        <p class="section__text__p2">Student At Raghu Institute Of Technology</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/shanmukh-sai-3140b9230'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Shanmukh-1609'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.JPG"
+            alt="Profile picture" 
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Skills</h3>
+              <p>Python <br />HTML <br />CSS <br />JavaScript</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelor of Technology,<br />Computer Science</p>
+            </div>
+          </div>
+          <div class="text-container">
             <p>
-              Bachelor of Technology, <br />Computer Science and Engineering(AI
-              - ML)
+              A Passionate and enthusiastic Computer engineer trainee with Good Analytic, Problem solving and Developing capabilities. Good knowledge on software Interface Building and having good knowledge on html and web page development and having a good knowledge about MS Office tools. Skilled in Python and C Programming languages. Currently pursuing my Batchelors degree in Computer Science and Engineering.
             </p>
           </div>
-          <div class="skills">
-            <h3>Skills</h3>
-            <p>
-              Python <br />
-              HTML <br />
-              CSS <br />
-              Java
-            </p>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technical Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Web Development</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ML Algorithms</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CV Concepts</h3>
+                </div>
+              </article>
+            </div>
           </div>
-          <p>
-            A Passionate and enthusiastic Computer engineer trainee with Good
-            Analytic, Problem solving and Developing capabilities. Good
-            knowledge on software Interface Building and having good knowledge
-            on html and web page development and having a good knowledge about
-            MS Office tools. Skilled in Python and C Programming languages.
-            Currently pursuing my Batchelors degree in Computer Science and
-            Engineering.
-          </p>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Soft Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Analytical Thinking</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Problem Solving</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Flexibility</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Attention to Detail</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Communication</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Organization</h3>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="skills-container" id="skills">
-      <h1 class="small-text">Explore My</h1>
-      <h1 class="large-text">Skills</h1>
-      <div class="skillSetContainer">
-        <div class="skillset">
-          <h2>Techincal Skills</h2>
-          <ul>
-            <li>✓ Web Development</li>
-            <li>✓ Python</li>
-            <li>✓ Java</li>
-            <li>✓ C</li>
-            <li>✓ ML Algorithms</li>
-            <li>✓ CV concepts</li>
-          </ul>
-        </div>
-        <div class="skillset">
-          <h2>Soft Skills</h2>
-          <ul>
-            <li>✓ Analytical Thinking</li>
-            <li>✓ Problem Solving</li>
-            <li>✓ Flexibility</li>
-            <li>✓ Organization</li>
-            <li>✓ Attention to Detail</li>
-            <li>✓ Communication</li>
-          </ul>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project1.webp"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Object Detection</h2>
+            <!-- <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ROHI06/Automated-Penetration-Testing-Tool'"
+              >
+                Github
+              </button>
+            </div> -->
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project2.jpeg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">E-Commerce Product Review Analysis</h2>
+            <!-- <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ROHI06/Heart-Stroke-Prediction'"
+              >
+                Github
+              </button>
+            </div> -->
+          </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="projectsContainer" id="projects">
-      <h1 class="small-text">Browse My</h1>
-      <h1 class="large-text">Recent Projects</h1>
-      <div class="projects">
-        <div class="project">
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
           <img
-            src="./hreffolder/Expense-Tracker-Project.png"
-            alt="Expense-Tracker-Project"
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
           />
-          <h2>Expense Tracker</h2>
+          <p><a href="mailto:shanmukhasai195@gmail.com">shanmukhasai195@gmail.com</a></p>
         </div>
-        <div class="project">
+        <div class="contact-info-container">
           <img
-            src="./hreffolder/Shopping-Cart-Project.png"
-            alt="Shopping-Cart-Project"
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
           />
-          <h2>Shopping Cart</h2>
-        </div>
-        <div class="project">
-          <img
-            src="./hreffolder/Weather-Application.png"
-            alt="Weather-Application"
-          />
-          <h2>Weather Application</h2>
+          <p><a href="https://www.linkedin.com/in/shanmukh-sai-3140b9230">LinkedIn</a></p>
         </div>
       </div>
-    </div>
-    <div class="contactContainer" id="contact">
-      <h1 class="small-text">Get in Touch</h1>
-      <h1 class="large-text">Contact Me</h1>
-      <div class="contactInfo">
-        <a href="mailto:shanmukhasai195@gmail.cmo" class="email"
-          >shanmukhasai195@gmail.com</a
-        >
-        <a
-          href="https://linkedin.com/in/shanmukh-sai-3140b9230"
-          class="linkedin"
-          >LinkedIn</a
-        >
-      </div>
-    </div>
-    <footer>
-      <p>
-        Copyright &copy; 2025 Shanmukha Sai Bhogavilli. All Rights Reserved.
-      </p>
+    </section>
+    <footer
+      <p style="text-align: center;"></p>Copyright &#169; 2025 Bhogavilli Shanmukha Sai. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
   </body>
